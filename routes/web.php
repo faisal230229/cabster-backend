@@ -19,7 +19,7 @@ Route::namespace('Web')->group(function () {
 
     // All the folder based web routes
     include_route_files('web');
-    
+
 
     Route::get('/', 'FrontPageController@index')->name('index');
     Route::get('/driverpage', 'FrontPageController@driverp')->name('driverpage');
@@ -33,7 +33,6 @@ Route::namespace('Web')->group(function () {
     Route::get('/dmv', 'FrontPageController@dmvpage')->name('dmv');
     Route::get('/contactus', 'FrontPageController@contactuspage')->name('contactus');
     Route::post('/contactussendmail','FrontPageController@contactussendmailadd')->name('contactussendmail');
-
 
     // Website home route
     //Route::get('/', 'HomeController@index')->name('home');
